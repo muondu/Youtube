@@ -13,9 +13,13 @@
             border: 10px solid yellow;
 
             margin: 10px;
-
         }
 
+
+        #black {
+            background-color: black;
+            color: white;
+        }
 
 
         h1 {
@@ -25,46 +29,79 @@
 
         }
 
+        h1 {
+            color: #F5FFF1;
 
+            background-color: green;
 
-
-        h2 {
-            width: 100%;
-            padding: 20px;
-            border: 20px dotted yellow;
-            margin: 5px;
         }
 
-        h3 {
-            width: 100%;
-            padding: 20px;
-            border: 40px double green;
-            margin: 5px;
+        .share {
+            background-color: darkslateblue;
+            color: darkolivegreen;
         }
+
+        .share2 {
+            background-color: wheat;
+            color: blue;
+
+        }
+
+
+        div .test {
+            background-color: gray;
+            font-weight: 900;
+        }
+        .navicons{
+            padding: 10px;
+    
+}
     </style>
+
 </head>
 
 <body>
+    <div>
+
+        <h1 id="myHeader">Hello World!</h1>
+
+        <h1 id="myHeader2">Hello World! 2</h1>
+
+        <button onclick="displayResult()">Change text</button>
+
+
+    </div>
+    <script>
+            function displayResult() {
+                document.getElementById("myHeader2").innerHTML = "Have a nice day!";
+                console.log("Cool")
+            }
+            
+        </script>
 
 
     <div>
-        <h1>Hi.Which game do you like.Roblox,Minecraft or Fortnight</h1>
+        <h1 class="test">Hi.Which game do you like.Roblox,Minecraft or Fortnight</h1>
+    </div>
+    <div>
+        <p class="nav-icons">Hi.Which game do you like.Roblox,Minecraft or Fortnight</p>
     </div>
 
+    <h1 id="black">This is another h1</h1>
 
-    <h2>LOL</h2>
+    <h1 class="share">This is the third h1</h1>
 
-    <h3>Dont play fortnight</h3>
 
-    <h1>Roblox is the best</h1>
-    <h2>Download Roblox if you dont have</h2>
-    <h3>Make an acount and play Mad city,Booga Booga,Jail break and Zombie Rush</h3>
-    <h1>Send a request to neshnero.</h1>
-    <h2>He has one trillion robax</h2>
-    <h3>He can give you free robax</h3>
-    <h1>Come to neshnero if you are a beginner.</h1>
-    <h2>He will kill any one who ones to kill you in games of roblox</h2>
-    <h3>Bye!</h3>
+    <h1 class="share">Fourth h1</h1>
+
+    <h1 class="share2">Fifth h1</h1>
+
+    <h1 class="share2">Six h1</h1>
+
+
+
+
+
 </body>
 
 </html>

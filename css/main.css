@@ -1,0 +1,22 @@
+.navicons {
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 36px;
+    color: white;
+}
+
+.form-inline {
+    padding-left: 30px;
+}
+
+.card-img-tv-channel {
+    width: 100%;
+    height: 150px;
+    font-size: 200px;
+
+}
+
+.card-body {
+    background-color: orange;
+
+}
