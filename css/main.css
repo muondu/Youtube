@@ -17,6 +17,26 @@
 }
 
 .card-body {
-    background-color: orange;
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+    
+    background-color:   blue;
+    transition: background 2s;
+    transition-delay: 2s;
+}
 
+.card-body:hover {
+    background-color: red;
+    color: white;
+    -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+}
+.card{
+-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+.card:hover {
+    
+ -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
 }
