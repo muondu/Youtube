@@ -17,26 +17,53 @@
 }
 
 .card-body {
-   font-family: myFirstFont;
-   src: url(sansation_light.woff);
+
+    transition: background 1s;
     
-    background-color:   blue;
-    transition: background 2s;
-    transition-delay: 2s;
+    
 }
 
 .card-body:hover {
-    background-color: red;
+    background-color: #383838;
     color: white;
-    -webkit-transform: rotate(180deg); /* Safari */
-  transform: rotate(180deg);
+
+    /*    -webkit-transform: rotate(180deg);  Safari */
+    /*  transform: rotate(180deg);*/
+
 }
-.card{
--webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-  transition: width 2s, height 2s, transform 2s;
+
+.card {
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    /* Safari */
+    transition: width 1s, height 1s, transform 1s;
 }
+
 .card:hover {
-    
- -webkit-transform: rotate(180deg); /* Safari */
-  transform: rotate(180deg);
+
+    /* -webkit-transform: rotate(180deg);  Safari */
+    /*  transform: rotate(180deg);*/
+}
+
+.number-of-views,
+.when-uploded {
+
+    color: red;
+}
+
+.number-of-views:hover,
+.when-uploded:hover {
+    -webkit-transform: rotate(90deg);
+    /*Safari */
+    transform: rotate(90deg);
+
+}
+
+
+
+
+
+
+#be-amazed {
+
+    display: none;
 }
