@@ -31,3 +31,14 @@ img{
     background-color: salmon;
     transform: scale(2) rotate(360deg);
 }
+
+
+
+
+
+
+
+.grass{
+    height: 30%;
+    background-color: seagreen;
+}
