@@ -35,22 +35,14 @@ html, body{
 
 /*// ELEMENTS TO ANIMATE //*/
 
-.img{
-    position: absolute;
-    top: -40px;
-    left: 0px;
-    animation-name: drive;
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-}
+
 .ok{
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 0;
     animation-name: drive;
     animation-duration: 5s;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: reverse;
 }
@@ -59,8 +51,8 @@ html, body{
 /*// KEYFRAMES  //*/
 
 @keyframes drive{
-     from{ transform: translateX(-200px)}
-    to{ transform: translateX(1300PX)}
+     from{ transform: translateX(0px)}
+    to{ transform: translateX(50000PX)}
         
 }
 

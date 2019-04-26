@@ -1,3 +1,19 @@
 body {
-    background-image: url(sky.jpg)
+  background-color: skyblue;
+}
+.gif{
+    animation-name: fly;
+     animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+   transform: translateX(500px)
+
+}
+
+@keyframes fly{
+from{ transform: translate(1100px,60px)}
+    to{ transform: translate(0px,100px)}
+  
+        
 }
