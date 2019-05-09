@@ -1,0 +1,57 @@
+body{
+    background-color: skyblue;
+}
+.okay{
+    position: absolute;
+    left: 0px;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-name: okay;
+    animation-duration: 9s;
+    
+}
+/*
+@keyframes okay{
+    from{
+        transform: translate(0px,0px);
+    }
+    to{
+        transform: translate(1000px, 0px);
+    }
+    
+}
+*/
+@keyframes okay {
+    0%{
+        background-color: red;
+        transform: translate(0px,0px);
+    }
+    10%{
+        background-color: orange;
+        transform: translate(500px,200px);
+    }
+    20%{
+        background-color: blue;
+        transform: translate(1000px,0px);
+    }
+    40%{
+        background-color: pink;
+        transform: translate(1000px,500px);
+    }
+    60%{
+        background-color: yellow;
+        transform: translate(500px, 200px);
+    }
+    80%{
+        background-color: indigo;
+        transform: translate(0px, 500px);
+    }
+    100%{
+        background-color: green;
+        transform: translate(0px,0px);
+    }
+    
+            
+    
+   
+}
