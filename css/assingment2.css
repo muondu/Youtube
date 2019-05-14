@@ -2,6 +2,7 @@ body{
     background-color: skyblue;
 }
 .okay{
+    animation-iteration-count: infinite;
     position: absolute;
     left: 0px;
     animation-fill-mode: forwards;

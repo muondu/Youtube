@@ -4,20 +4,23 @@
     overflow: hidden;
     margin: 0;
 }
-.grass, .sky, .road{
+
+.grass, .sky, .road, .grass2 .manna{
     position:  relative;
 }
 
 .sky{
-    height: 40%;
+    height: 33%;
     background-color: skyblue;
 }
+
 .grass{
-    height: 30%;
+    height: 16%;
     background-color: seagreen;
 }
+
 .road{
-    height: 36%;
+    height: 35%;
     background-color: dimgray;
     box-sizing: border-box;
     border-top: 10px solid grey;
@@ -26,13 +29,18 @@
 }
 .lines{
     box-sizing: border-box;
-    
     border: 5px dashed #fff;
     height: 0px;
     width: 100%;
     position: absolute;
     top: 45%;
 }
+.grass2{
+    height: 16%;
+    background-color: seagreen;
+}
+
+
 
 /*// ELEMENTS TO ANIMATE //*/
 
@@ -40,7 +48,7 @@
     position: absolute;
     top: -40px;
     left: 0;
-    animation: drive 3s both infinite linear, 
+    animation: drive 12s both infinite linear, 
                     jump 0.3s 1.2s ease;
     
     
