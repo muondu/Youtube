@@ -1,98 +1,145 @@
- html, body{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-}
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
+     margin: 0;
+ }
 
-.grass, .sky, .road, .grass2 .manna{
-    position:  relative;
-}
+ .grass,
+ .sky,
+,
+ .grass2
+.manna
+{
+     position: relative;
+ }
 
-.sky{
-    height: 33%;
-    background-color: skyblue;
-}
+ .sky {
+     height: 33%;
+     background-color: skyblue;
+ }
 
-.grass{
-    height: 16%;
-    background-color: seagreen;
-}
+ .grass {
+     height: 16%;
+     background-color: seagreen;
+ }
 
-.road{
-    height: 35%;
-    background-color: dimgray;
-    box-sizing: border-box;
-    border-top: 10px solid grey;
+ .road {
+     height: 35%;
+     background-color: dimgray;
+     box-sizing: border-box;
+     border-top: 10px solid grey;
      border-bottom: 10px solid grey;
-    width: 100%;
+     width: 100%;
+ }
+
+ .lines {
+     box-sizing: border-box;
+     border: 5px dashed #fff;
+     height: 0px;
+     width: 100%;
+     position: absolute;
+     top: 365px;
 }
-.lines{
-    box-sizing: border-box;
-    border: 5px dashed #fff;
-    height: 0px;
-    width: 100%;
-    position: absolute;
-    top: 45%;
-}
-.grass2{
-    height: 16%;
-    background-color: seagreen;
-}
+ .grass2 {
+     height: 16%;
+     background-color: seagreen;
+ }
 
 
 
-/*// ELEMENTS TO ANIMATE //*/
+ /*// ELEMENTS TO ANIMATE //*/
 
-.img{
-    position: absolute;
-    top: -40px;
-    left: 0;
-    animation: drive 12s both infinite linear, 
-                    jump 0.3s 1.2s ease;
-    
-    
-}
-.ok{
-    position: absolute;
-    top: 100px;
-    left: 0;
-    animation-name: drive;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
+ .car1 {
+     position: absolute;
+     top: 305px;
+     left: 0;
+     animation: drive 12s both infinite linear,
+         jump 0.3s 1.2s ease;
+
+
+ }
+
+ .car2 {
+     position: absolute;
+     top: 425px;
+     left: 0;
+     animation-name: drive;
+     animation-duration: 12s;
+     animation-fill-mode: both;
+     animation-iteration-count: infinite;
      animation-timing-function: linear;
-}
-.cloud{
-    position: absolute;
-    
-}
-.cloud:nth-child(1){
-    width: 200px;
-    top: 120px;
-    opacity: 0.5;
-    animation: wind 80s linear infinite reverse;
-}
-.cloud:nth-child(2){
-    width: 300px;
-    top: 0;
-    animation: wind 50s linear infinite reverse;
-}
+ }
 
-/*// KEYFRAMES  //*/
+ .cloud {
+     position: absolute;
 
-@keyframes drive{
-     from{ transform: translateX(-200px)}
-    to{ transform: translateX(1300PX)}
-        
-}
+ }
 
-@keyframes wind{
-    from{left: -300px}
-    to{left: 100% }
-}
-@keyframes jump{
-    0%{top: -40px}
-    50%{top: -100px}
-    100%{top: -40px}
-}
+ .cloud:nth-child(1) {
+     width: 200px;
+     top: 120px;
+     opacity: 0.5;
+     animation: wind 80s linear infinite reverse;
+ }
+
+ .cloud:nth-child(2) {
+     width: 300px;
+     top: 0;
+     animation: wind 50s linear infinite reverse;
+ }
+
+ .manna {
+     position: absolute;
+     left: 500px;
+     animation-name: manna;
+     animation-fill-mode: both;
+     animation-duration: 6s;
+     animation-iteration-count: infinite;
+ }
+
+ /*// KEYFRAMES  //*/
+ @keyframes drive {
+     from {
+         transform: translateX(-200px)
+     }
+
+     to {
+         transform: translateX(1300PX)
+     }
+ }
+
+ @keyframes wind {
+     from {
+         left: -300px
+     }
+
+     to {
+         left: 100%
+     }
+ }
+
+ @keyframes jump {
+     0% {
+         top: -40px
+     }
+
+     50% {
+         top: -100px
+     }
+
+     100% {
+         top: -40px
+     }
+ }
+
+ @keyframes manna {
+     from {
+         transform: translateY(0px);
+     }
+
+     to {
+         transform: translateY(360px);
+     }
+ }
