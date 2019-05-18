@@ -8,10 +8,8 @@
 
  .grass,
  .sky,
-,
- .grass2
-.manna
-{
+ ,
+ .grass2 .manna {
      position: relative;
  }
 
@@ -41,7 +39,8 @@
      width: 100%;
      position: absolute;
      top: 365px;
-}
+ }
+
  .grass2 {
      height: 16%;
      background-color: seagreen;
