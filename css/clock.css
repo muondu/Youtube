@@ -29,7 +29,7 @@
 }
 
 .second-hand {
-    width: 220px;
+    width: 180px;
     height: 2px;
     background-color: blue;
     margin-top: 200px;
@@ -42,12 +42,23 @@
 
 .minute-hand {
     height: 4px;
-    width: 200px;
+    width: 171px;
     background-color: orange;
+    margin-top: 185px;
+    margin-left: 200px;
+    position: absolute;
+    transform-origin: 0%;
+    transform: rotate(270deg);
 }
 
 .hour-hand {
     height: 6px;
-    width: 180px;
+    width: 140px;
     background-color: red;
+    margin-top: 185px;
+    margin-left: 200px;
+    position: absolute;
+    transform-origin: 0%;
+    transform: rotate(180deg);
+    
 }
