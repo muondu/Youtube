@@ -1,4 +1,8 @@
+body{
+    background-color: yellow;
+}
 .clock {
+    
     border-radius: 50%;
     background-color: lightgrey;
     height: 400px;
@@ -15,14 +19,14 @@
     top: 50%;
     left: 50%;
     width: 20px;
-    height: 20px;;
+    height: 20px;
     background-color: black;
     
       /* 
     Offset the position correctly with
     minus half of the width and minus half of the height 
    */
-    margin: -10px 0 0 -10px;
+    margin: 10px 0 0 10px;
    
 
 
