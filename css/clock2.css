@@ -10,6 +10,7 @@ body {
     display: block;
     margin: auto;
     position: relative;
+    box-shadow: 20px 20px 50px 10px orange inset;
 }
 
 .middle-dot {
@@ -33,7 +34,7 @@ body {
     transform-origin: 0%;
     transform: rotate(-90deg);
     animation-name: second-hand-anim;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -51,7 +52,7 @@ body {
     animation-name: minute-hand-anim;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-duration: 40s;
+    animation-duration: 3600s;
     animation-iteration-count: infinite;
 }
 
@@ -67,7 +68,7 @@ body {
     animation-name: hour-hand-anim;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-duration: 60s;
+    animation-duration: 216000s;
     animation-iteration-count: infinite;
 }
 
@@ -75,8 +76,8 @@ body {
 @keyframes second-hand-anim {
     0% {
         transform: rotate(-90deg);
-
-    }
+        
+      }
 
     25% {
         transform: rotate(0deg);
